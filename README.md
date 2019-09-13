@@ -4,19 +4,24 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 
 ## Table of Contents
 
-1. Overview
-   A. Project Description
-   B. Project Management
+1. [Overview](#overview)
+    1. Project Description
+    2. Project Management
 1. Installation
-   A. Requirements
-   B. Tooling
-   C. Instructions
+    A. Requirements
+    B. Tooling
+    C. Instructions
 
-## Overview
+## Overview<a name="overview"></a>
+
 ### Description
+
 ### Project Management
 
 ## Installation
+
 ### Requirements
+
 ### Tooling
+
 ### Instructions
