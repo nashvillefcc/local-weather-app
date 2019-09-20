@@ -21,4 +21,4 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 ### Tooling
 ### Instructions
 ### Team Members
-<a href = "https://github.com/mgaytan">Mauricio Gaytan</a>
+<a href = "https://github.com/mgaytan">Mauricio Gaytan</a>-Other
