@@ -18,14 +18,15 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 ### Project Management
 ### Team Members
 
-This section lists all members of the Local Weather App team, and indicates how they contributed to the project (as designer, developer, or other).
-
-Dennis Kitchen (@denniswkitchen) - Designer, developer.
-
 ## Installation
 ### Requirements
 ### Tooling
 ### Instructions
 ### Team Members
+This section lists all members of the Local Weather App team, and indicates how they contributed to the project (as designer, developer, or other).
+
 <a href = "https://github.com/mgaytan">Mauricio Gaytan</a>-Other
+
 <a href = "https://github.com/16-steven">Steven Kroeger</a>-Other
+
+<a href = "https://github.com/denniswkitchen">Dennis Kitchen<a>-Designer, developer
