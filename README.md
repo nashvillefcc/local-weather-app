@@ -26,6 +26,6 @@ Dennis Kitchen (@denniswkitchen) - Designer, developer.
 ### Requirements
 ### Tooling
 ### Instructions
-
-
-
+### Team Members
+<a href = "https://github.com/mgaytan">Mauricio Gaytan</a>-Other
+<a href = "https://github.com/16-steven">Steven Kroeger</a>-Other
