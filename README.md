@@ -40,3 +40,4 @@ Please feel free to message the lead developers with any questions or for an inv
 - <a href="https://github.com/mgaytan">Mauricio Gaytan</a> - Other
 - <a href="https://github.com/16-steven">Steven Kroeger</a> - Other
 - <a href="https://github.com/denniswkitchen">Dennis Kitchen</a> - Designer, developer
+- <a href="https://github.com/blackcl3">Christian Black</a> - Designer and Developer
