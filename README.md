@@ -25,6 +25,8 @@ This section lists all members of the Local Weather App team, and indicates how 
 
 <a href = "https://github.com/denniswkitchen">Dennis Kitchen</a>-Designer, developer
 
+<a href = "https://github.com/blackcl3">Christian Black</a>-Designer and Developer
+
 ## Installation
 ### Requirements
 ### Tooling
