@@ -7,6 +7,7 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 1. Overview
    A. Project Description
    B. Project Management
+   C. Team Members
 1. Installation
    A. Requirements
    B. Tooling
@@ -15,11 +16,16 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 ## Overview
 ### Description
 ### Project Management
+### Team Members
+This section lists all members of the Local Weather App team, and indicates how they contributed to the project (as designer, developer, or other).
+
+<a href = "https://github.com/mgaytan">Mauricio Gaytan</a>-Other
+
+<a href = "https://github.com/16-steven">Steven Kroeger</a>-Other
+
+<a href = "https://github.com/denniswkitchen">Dennis Kitchen</a>-Designer, developer
 
 ## Installation
 ### Requirements
 ### Tooling
 ### Instructions
-### Team Members
-<a href = "https://github.com/mgaytan">Mauricio Gaytan</a>-Other
-<a href = "https://github.com/16-steven">Steven Kroeger</a>-Other
