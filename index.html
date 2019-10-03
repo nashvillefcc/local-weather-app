@@ -8,10 +8,31 @@
     <meta name="description" content="FCC local weather app" />
     <meta name="author" content="Nashville FCC" />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <title>Hello world!</title>
   </head>
 
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col px-lg-5">
+          <div class="jumbotron">
+            <h1 class="display-4">Your local temperature</h1>
+            <hr class="my-4" />
+            <span>The temperature is</span>
+            <span id="theTemp">99</span>
+            <span>° Fahrenheit.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
   </body>
 </html>
