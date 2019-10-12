@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 let title = document.querySelector('div h1'); 
@@ -25,3 +26,11 @@ navigator.geolocation.getCurrentPosition(function (position) {
     locationName.innerHTML = '<p>' + latitude + '</p><p>' + longitude + '</p>'; 
 });
 
+=======
+document.querySelector("#theTemp").innerHTML = "100";
+
+// TODO: geolocation stuff
+navigator.geolocation.getCurrentPosition(function(position) {
+  console.table(position.coords.latitude, position.coords.longitude);
+});
+>>>>>>> develop
