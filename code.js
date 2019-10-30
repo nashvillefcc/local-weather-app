@@ -1,40 +1,41 @@
 
 
-let title = document.querySelector('div h1'); 
-console.log(title) 
-
-
-//geolocation
-
-
-function getCoordinates() {
-    function success(position) {
-        const latitudePosition = position.coords.latitude;
-        const longitudePosition = position.coords.longitude;
-        console.log(latitudePosition, longitudePosition) 
-    }
-
-    function error() {
-        console.log("unable to retrieve location")
-    }
-
-    if (!navigator.geolocation) {
-        /* geolocation is available */
-        console.log("Geolocation not supported")
-        
-    } else {
-        /* geolocation IS NOT available */
-        console.log("Geo is supported")
-        navigator.geolocation.getCurrentPosition(success, error)
-    }
-
-}
-
-getCoordinates();
-
 
 
 document.querySelector("#theTemp").innerHTML = "100";
+let locationText = document.querySelector("#location")
 
 
+// Returns a promise containing the user's latitude and longitude
+function getUserCoordinates() {
+  if (navigator.geolocation) {
+    return new Promise(function (resolve, reject) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        resolve(success(position));
+      }, reject);
+    });
+  } else {
+    return Promise.reject("Geolocation is not available on this device");
+  }
 
+  function success(position) {
+    return {
+      lat: position.coords.latitude,
+      long: position.coords.longitude
+    };
+  }
+}
+
+function getTheWeather() {
+  getUserCoordinates()
+    .then(position => {
+      console.log(position);
+      // hitTheWeatherApi(position) // TODO!
+      locationText.innerHTML = "<span>" + position.lat + "</span> <span>" + position.long + "</span> "
+    })
+    .catch(err => {
+      locationText.innerHTML = err.message; 
+    });
+}
+
+getTheWeather();
