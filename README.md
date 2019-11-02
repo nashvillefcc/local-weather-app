@@ -5,8 +5,9 @@ Nashville FCC's version of the local weather app project completed by the Mentor
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Installation and Contribution](#installation)
-3. [Contributers and Contact Info](#contributors)
+2. [Installation](#installation)
+3. [Contribution](#contribution)
+4. [Contributers and Contact Info](#contributors)
 
 <a name="project-overview"></a>
 
@@ -20,20 +21,24 @@ This is a teaching exercise and not for sale or distribution without acknowledgm
 
 <a name="installation"></a>
 
-## Installation and Contribution
+## Installation
 
-For users, this application is still a work in progress and not ready to be run yet.
+This application is still a work in progress and not ready to be run yet.
 
-For contributors, we recommend using VS Code as a code editor unless you already have a preferred program. Downloads can be found on [the main VS Code site](https://code.visualstudio.com) and installation instructions can be found on [their documentation pages](https://code.visualstudio.com/docs/setup/setup-overview). We plan to include a VS Code `.code-workspace` file in the repo to standardize the extensions that the team uses.
+<a name="contribution"></a>
 
-Open tickets can be found on the Project Board here: https://github.com/nashvillefcc/local-weather-app/projects/1. If you would like to contribute, please inform the team on the Discord channel before beginning work. For each ticket, create a feature branch off of our Develop branch and create a Pull Request when it is complete. Anyone is free to review Pull Requests, and project leads will accept and merge the branches.
+## Contribution
 
-Our tickets fall into a Feature -> Task hierarchy, where a Feature is a full user story with deliverables and there are many Tasks to complete each Feature. Tasks are light on detail; there is an expected outcome on each Task but the implementation is up to the contributor. Generally speaking, Tasks are tagged as 1 of 2 categories: UI tickets (primarily HTML and CSS) and JS tickets (primarily Javascript). Dependencies will be noted in the Blockers section of Task tickets, and all Tasks on a Feature and on the board are currently ordered by priority based on these dependencies.
+We recommend using VS Code as a code editor unless you already have a preferred program. Downloads can be found on [the main VS Code site](https://code.visualstudio.com) and installation instructions can be found on [their documentation pages](https://code.visualstudio.com/docs/setup/setup-overview). We plan to include a VS Code `.code-workspace` file in the repo to standardize the extensions that the team uses.
+
+Open tickets can be found on the Project Board here: https://github.com/nashvillefcc/local-weather-app/projects/1. If you would like to contribute, please inform the team on the Discord channel before beginning work. For each ticket, create a branch to work on and create a Pull Request when it is complete. Anyone is free to review Pull Requests, and project leads will accept and merge the branches.
+
+Our tickets fall into a Feature -> Task hierarchy, where a Feature is a full user story and there are many Tasks per Feature. Tasks are light on detail; there is an expected outcome on each Task but the implementation is up to the contributor. Generally speaking, Tasks are tagged as either UI tickets (primarily HTML and CSS) or JS tickets (primarily Javascript). Dependencies will be noted in the Blockers section of Task tickets, and all Tasks on a Feature and on the board are currently ordered by priority based on these dependencies.
 
 Each Feature and each Task will have their own Git branch. Tasks will be merged into Features by PR and that Feature will be merged into the Develop branch by PR once it's complete.
 
-- The first Feature branch is "FEATURE/display-local-weather"
-- Tasks should follow the naming convention "TASK/ticket-name-or-short-description"
+- Feature branches should follow the naming convention "FEATURE/feature-name-or-short-description"
+- Task branches should follow the naming convention "TASK/ticket-name-or-short-description"
 
 Instructions for cloning our source code using Git can be found on our wiki here: https://github.com/nashvillefcc/local-weather-app/wiki/Basic-Git-Tutorial
 
