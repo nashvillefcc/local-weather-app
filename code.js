@@ -5,6 +5,13 @@
 document.querySelector("#theTemp").innerHTML = "100";
 let locationText = document.querySelector("#location")
 
+let LocationObject = class {
+  constructor(latitude, longitude) {
+    this.longitude = longitude; 
+    this.latitude = latitude; 
+  }
+} 
+
 
 // Returns a promise containing the user's latitude and longitude
 function getUserCoordinates() {
@@ -19,19 +26,16 @@ function getUserCoordinates() {
   }
 
   function success(position) {
-    return {
-      lat: position.coords.latitude,
-      long: position.coords.longitude
-    };
+    let location = new LocationObject(position.coords.latitude, position.coords.longitude)
+    return location; 
   }
 }
 
 function getTheWeather() {
   getUserCoordinates()
     .then(position => {
-      console.log(position);
       // hitTheWeatherApi(position) // TODO!
-      locationText.innerHTML = "<span>" + position.lat + "</span> <span>" + position.long + "</span> "
+      locationText.innerHTML = "<span>" + position.latitude + "</span> <span>" + position.longitude + "</span>"
     })
     .catch(err => {
       locationText.innerHTML = err.message; 
