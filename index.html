@@ -10,6 +10,7 @@
     />
     <meta name="description" content="FCC local weather app" />
     <meta name="author" content="Nashville FCC" />
+    
 
     <link
       rel="stylesheet"
@@ -27,11 +28,23 @@
         <div class="col">
           <div class="jumbotron">
             <h1 class="display-4">Your local temperature</h1>
-            <span>The temperature is</span>
-            <span id="temperature-display">99</span>
-            <span>° Fahrenheit.</span>
             <hr class="my-4" />
-            
+              <div class="row">
+                <div class="col">
+                  <span>
+                    <span>The temperature is</span>
+                    <span id="theTemp">99</span>
+                    <span>° Fahrenheit.</span>
+                  </span>
+                </div>
+              </div>  
+              <div class="row">
+                <div class="col">
+                <span>You are here:</span>
+                <span id="location">Loading...</span>
+                </div> 
+              </div>
+            </div>        
             <!-- The following displays the current (static) location. -->
             
             <h1 class="display-4">Current Location</h1>
@@ -43,12 +56,8 @@
             <div>
               <span id="static-weather">Mostly sunny skies.</span>
             </div>
-            
           </div>
         </div>
-      </div>
-    </div>
-
     <script src="code.js"></script>
   </body>
 </html>
