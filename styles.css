@@ -1,0 +1,9 @@
+body {
+  height: 100%;
+  background-color: #aaa;
+}
+
+body > .container {
+  min-height: 100%;
+  background-color: #eee;
+}

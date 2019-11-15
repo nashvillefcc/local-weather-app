@@ -10,7 +10,6 @@
     />
     <meta name="description" content="FCC local weather app" />
     <meta name="author" content="Nashville FCC" />
-    
 
     <link
       rel="stylesheet"
@@ -19,7 +18,9 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello world!</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>FCC Weather App!</title>
   </head>
 
   <body>
@@ -29,35 +30,36 @@
           <div class="jumbotron">
             <h1 class="display-4">Your local temperature</h1>
             <hr class="my-4" />
-              <div class="row">
-                <div class="col">
-                  <span>
-                    <span>The temperature is</span>
-                    <span id="theTemp">99</span>
-                    <span>° Fahrenheit.</span>
-                  </span>
-                </div>
-              </div>  
-              <div class="row">
-                <div class="col">
+            <div class="row">
+              <div class="col">
+                <span>
+                  <span>The temperature is</span>
+                  <span id="theTemp">99</span>
+                  <span>° Fahrenheit.</span>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
                 <span>You are here:</span>
                 <span id="location">Loading...</span>
-                </div> 
               </div>
-            </div>        
-            <!-- The following displays the current (static) location. -->
-            
-            <h1 class="display-4">Current Location</h1>
-            <span id="current-location">Nashville, TN</span>
-            <hr class="my-4" />
-
-            <!-- The following displays the current (static) weather description. -->
-
-            <div>
-              <span id="static-weather">Mostly sunny skies.</span>
             </div>
           </div>
+          <!-- The following displays the current (static) location. -->
+
+          <h1 class="display-4">Current Location</h1>
+          <span id="current-location">Nashville, TN</span>
+          <hr class="my-4" />
+
+          <!-- The following displays the current (static) weather description. -->
+
+          <div>
+            <span id="static-weather">Mostly sunny skies.</span>
+          </div>
         </div>
+      </div>
+    </div>
     <script src="code.js"></script>
   </body>
 </html>
