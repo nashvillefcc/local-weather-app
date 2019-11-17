@@ -46,10 +46,12 @@ function getTheWeather() {
       //Display local temperature
       let fTemp = ((res.main.temp - 273.15) * 9) / 5 + 32; //Converts JSON object element res.main.temp from K° to F°
       document.querySelector("#theTemp").innerHTML = Math.round(fTemp); //Rounds and displays current temperature
-      
+      console.log(`fTemp: ${ftemp}`);
+
       //Display weather image
       let iconUrl = `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`;
-      console.log(iconUrl);
+      document.getElementById("weather-image").src = iconUrl;
+      console.log(`iconUrl: ${iconUrl}`);
 
       //Display weather description
 
