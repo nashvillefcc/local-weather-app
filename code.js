@@ -40,10 +40,21 @@ function getTheWeather() {
     .then(data => {
       return data.json();
     }) //Returns a promise
-    .then(res => {
-      //Gives promise a handle (res)
+    .then(res => { //Gives promise a handle (res)
+      console.log(res);
+
+      //Display local temperature
       let fTemp = ((res.main.temp - 273.15) * 9) / 5 + 32; //Converts JSON object element res.main.temp from K° to F°
       document.querySelector("#theTemp").innerHTML = Math.round(fTemp); //Rounds and displays current temperature
+      
+      //Display weather image
+      let iconUrl = `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`;
+      console.log(iconUrl);
+
+      //Display weather description
+
+      //Display location description
+      
     })
     .catch(err => console.log(err));
 }
