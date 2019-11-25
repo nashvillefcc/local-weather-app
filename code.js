@@ -33,9 +33,9 @@ function updateTemp(res) {
 }
 
 function updateIcon(res) { 
-  //Display weather image
+  //Display weather icon
   let iconUrl = `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`;
-  document.getElementById("weather-image").src = iconUrl;
+  document.getElementById("weather-icon").src = iconUrl;
 }
 
 function getTheWeather() {
