@@ -26,6 +26,18 @@ function getUserCoordinates() {
   }
 }
 
+function updateTemp(res) { 
+  //Display local temperature
+  let fTemp = ((res.main.temp - 273.15) * 9) / 5 + 32; //Converts JSON object element res.main.temp from K° to F°
+  document.querySelector("#theTemp").innerHTML = Math.round(fTemp); //Rounds and displays current temperature
+}
+
+function updateIcon(res) { 
+  //Display weather icon
+  let iconUrl = `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`;
+  document.getElementById("weather-icon").src = iconUrl;
+}
+
 function getTheWeather() {
   getUserCoordinates()
     .then(locationObject => {
@@ -40,10 +52,9 @@ function getTheWeather() {
     .then(data => {
       return data.json();
     }) //Returns a promise
-    .then(res => {
-      //Gives promise a handle (res)
-      let fTemp = ((res.main.temp - 273.15) * 9) / 5 + 32; //Converts JSON object element res.main.temp from K° to F°
-      document.querySelector("#theTemp").innerHTML = Math.round(fTemp); //Rounds and displays current temperature
+    .then(res => { //Gives promise a handle (res)
+      updateTemp(res);
+      updateIcon(res);
     })
     .catch(err => console.log(err));
 }
