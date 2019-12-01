@@ -25,39 +25,15 @@
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="jumbotron">
-            <h1 class="display-4">Your local temperature</h1>
-            <hr class="my-4" />
-            <div class="row">
-              <div class="col">
-                <span>
-                  <span>The temperature is</span>
-                  <span id="theTemp">99</span>
-                  <span>° Fahrenheit.</span>
-                </span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <span>You are here:</span>
-                <span id="location">Loading...</span>
-              </div>
-            </div>
-          </div>
-          <!-- The following displays the current (static) location. -->
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-10">
+          <h1 id="the-temp">Loading...</h1>
+          <h2 id="current-location">Nashville, TN</h2>
+          <h4>MONTH, DD, YYYY</h4>
 
-          <h1 class="display-4">Current Location</h1>
-          <span id="current-location">Nashville, TN</span>
           <hr class="my-4" />
 
-          <!-- The following displays the weather icon. -->
-
-          <img id="weather-icon" src="">
-
-          <!-- The following displays the current (static) weather description. -->
-
+          <img id="weather-icon" src="" />
           <div>
             <span id="static-weather">Mostly sunny skies.</span>
           </div>
